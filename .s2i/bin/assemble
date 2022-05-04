@@ -1,3 +1,11 @@
-#!/bin/bash
+#!/bin/sh
+
+echo Hello from before assemble script 
+
+# Call the original script
+/usr/libexec/s2i/assemble
+
+echo Hello from after assemble script
+
 touch /opt/app-root/src/myfile.php
 echo 'salam' > /opt/app-root/src/myfile.php

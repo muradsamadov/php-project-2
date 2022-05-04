@@ -6,3 +6,4 @@ echo Hello from before assemble script
 /usr/libexec/s2i/assemble
 
 echo Hello from after assemble script
+touch /opt/app-root/src/myfile
